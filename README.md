@@ -17,6 +17,28 @@ Este es un proyecto de una API para conectarse con la plataforma de música Spot
   SPOTIFY_REDIRECT_URI=http://localhost:3000/auth/callback
 * Iniciar la aplicación usando el comando 'npm start'
 
+# Estructura de carpetas
+
+* `node_modules/: Carpeta que contiene las dependencias del proyecto.
+* `src/: Carpeta que contiene todo el código fuente del proyecto.
+*   `controllers/: Carpeta que contiene los controladores de las rutas.
+*     `authController.js: Archivo que contiene la lógica para la autenticación de usuarios.
+*   `models/: Carpeta que contiene los modelos de datos de la base de datos.
+*     `user.js: Archivo que contiene el modelo de datos de usuarios.
+*   `routes/: Carpeta que contiene las rutas de la aplicación.
+*     `auth.js: Archivo que contiene las rutas para la autenticación de usuarios.
+*     `index.js: Archivo que contiene las rutas para la página principal.
+*   `views/: Carpeta que contiene las plantillas de vistas de la aplicación.
+*       `home.ejs: Archivo que contiene la plantilla de la página de inicio.
+*       `index.ejs: Archivo que contiene la plantilla del encabezado y pie de página.
+*       `login.ejs: Archivo que contiene la plantilla de la página de inicio de sesión.
+*       `register.ejs: Archivo que contiene la plantilla de la página de registro de usuarios.
+*   `index.js: Archivo que contiene el código principal de la aplicación.
+* `.env: Archivo que contiene variables de entorno para la configuración de la aplicación.
+* `.gitignore: Archivo que indica a Git qué archivos y carpetas ignorar al hacer un commit.
+* `config.js: Archivo que contiene la configuración de la base de datos y el puerto de la aplicación.
+* `package-lock.json: Archivo generado automáticamente por npm para asegurar la consistencia de las dependencias instaladas.
+* `package.json: Archivo que contiene información sobre el proyecto y las dependencias utilizadas.
 # Uso
 * La API proporciona los siguientes endpoints:
 
