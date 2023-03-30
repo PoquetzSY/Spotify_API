@@ -1,4 +1,4 @@
-# API de Spotify
+# Spotify_API
 Este es un proyecto de una API para conectarse con la plataforma de música Spotify. La API está construida con Node.js, Express.js y Mongoose.
 
 # Requisitos previos
