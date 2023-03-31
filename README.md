@@ -29,7 +29,8 @@ Para utilizar el proyecto, asegúrate de tener instaladas las siguientes librer�
 - express-session
 - jsonwebtoken
 - mongoose
-Puedes instalar estas librerías fácilmente utilizando el gestor de paquetes de Node.js, npm. Sigue los ]siguientes pasos:
+
+Puedes instalar estas librerías fácilmente utilizando el gestor de paquetes de Node.js, npm. Sigue los siguientes pasos:
 
 bre una terminal o línea de comandos en tu sistema operativo.
 Navega a la carpeta donde está ubicado el proyecto.
