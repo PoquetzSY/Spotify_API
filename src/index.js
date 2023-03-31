@@ -4,7 +4,6 @@ const cookieParser = require('cookie-parser');
 const config = require('../config');
 const indexRoutes = require('./routes/index');
 const authRoutes = require('./routes/auth');
-const path = require('path');
 
 const app = express();
 
@@ -29,21 +28,21 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(cookieParser());
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', __dirname + '/views');
 
 // Database connection
-mongoose.connect(config.mongoURI || 'mongodb://127.0.0.1:27017/Api-spotify')
-  .then(() => app.listen(config.port))
+mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  // .then(() => app.listen(config.port))
   .catch(err => console.log(err));
 
-  app.listen(config.hostxd || config.port, () => {
+  app.listen(config.port, () => {
     console.log('El servidor esta funcionando correctamente');
   });
 
 // Routes
 app.get('/', (req, res) => {
   res.render('index');
-  res.status(200).send('Servidor iniciado correctamente');
+  // res.status(200).send('Servidor iniciado correctamente');
 });
 
 app.use('/', indexRoutes);
@@ -52,6 +51,6 @@ app.use('/auth', authRoutes);
 // Error middleware
 app.use((err, req, res, next) => {
   console.log(err);
-  res.status(500).send('Something went wrong');
+  // res.status(500).send('Something went wrong');
 });
 
