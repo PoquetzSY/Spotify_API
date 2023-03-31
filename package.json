@@ -4,7 +4,7 @@
   "description": "Proyecto de recuperacion empleando Node.js, MongoDB y Spotify API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/index.js"
   },
   "author": "PoquetzSY",
   "license": "ISC",
