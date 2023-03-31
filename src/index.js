@@ -6,12 +6,13 @@ const indexRoutes = require('./routes/index');
 const authRoutes = require('./routes/auth');
 
 const app = express();
+require('dotenv').config();
 
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 
 const store = new MongoDBStore({
-  uri: "mongodb+srv://kael:kael@kaelito.9pphtxr.mongodb.net/?retryWrites=true&w=majority",
+  uri: process.env.MONGO_URI,
   collection: 'sessions'
 });
 
@@ -35,7 +36,7 @@ mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: t
   // .then(() => app.listen(config.port))
   .catch(err => console.log(err));
 
-  app.listen(config.port, () => {
+  app.listen(process.env.PORT, () => {
     console.log('El servidor esta funcionando correctamente');
   });
 
