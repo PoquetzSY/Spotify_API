@@ -11,7 +11,7 @@ const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 
 const store = new MongoDBStore({
-  uri: "mongodb+srv://kael28:pruebas123@kaelito.9pphtxr.mongodb.net/?retryWrites=true&w=majority",
+  uri: "mongodb+srv://kael:kael@kaelito.9pphtxr.mongodb.net/?retryWrites=true&w=majority",
   collection: 'sessions'
 });
 
@@ -34,6 +34,10 @@ app.set('views', __dirname + '/views');
 mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(config.port))
   .catch(err => console.log(err));
+
+  app.listen(config.port, config.hostxd, () => {
+    console.log('El servidor esta funcionando correctamente');
+  });
 
 // Routes
 app.get('/', (req, res) => {
