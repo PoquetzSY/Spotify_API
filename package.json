@@ -1,5 +1,5 @@
 {
-  "name": "Spotify_API",
+  "name": "spotify-api",
   "version": "1.0.0",
   "description": "Proyecto de recuperacion empleando Node.js, MongoDB y Spotify API",
   "main": "index.js",
