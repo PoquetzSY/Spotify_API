@@ -32,7 +32,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Database connection
-mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(config.mongoURI || 'mongodb://127.0.0.1:27017/Api-spotify')
   .then(() => app.listen(config.port))
   .catch(err => console.log(err));
 
