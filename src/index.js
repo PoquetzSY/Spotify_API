@@ -35,7 +35,7 @@ mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: t
   .then(() => app.listen(config.port))
   .catch(err => console.log(err));
 
-  app.listen(config.port, config.hostxd, () => {
+  app.listen(config.hostxd, () => {
     console.log('El servidor esta funcionando correctamente');
   });
 
