@@ -11,7 +11,7 @@ const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 
 const store = new MongoDBStore({
-  uri: "mongodb://127.0.0.1:27017/Api-spotify",
+  uri: "mongodb+srv://kael28:pruebas123@kaelito.9pphtxr.mongodb.net/?retryWrites=true&w=majority",
   collection: 'sessions'
 });
 
