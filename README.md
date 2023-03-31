@@ -2,22 +2,22 @@
 Este es un proyecto de una API para conectarse con la plataforma de música Spotify. La API está construida con Node.js, Express.js y Mongoose.
 
 # Requisitos previos
-* Tener instalado Node.js en su máquina
-* Tener una cuenta en la plataforma de música Spotify
-* Tener una cuenta en MongoDB y una base de datos configurada
+Tener instalado Node.js en su máquina
+Tener una cuenta en la plataforma de música Spotify
+Tener una cuenta en MongoDB y una base de datos configurada
 
 # Instalación
-* Clonar el repositorio en tu máquina
-* Instalar las dependencias del proyecto usando el comando npm install
-* Configurar las variables de entorno en el archivo .env. Se necesita definir las siguientes variables:
+Clonar el repositorio en tu máquina
+Instalar las dependencias del proyecto usando el comando npm install
+Configurar las variables de entorno en el archivo .env. Se necesita definir las siguientes variables:
   PORT=3000
   MONGODB_URI=mongodb://localhost:27017/api-spotify
   SPOTIFY_CLIENT_ID=<su client ID de Spotify>
   SPOTIFY_CLIENT_SECRET=<su client secret de Spotify>
   SPOTIFY_REDIRECT_URI=http://localhost:3000/auth/callback
-* Iniciar la aplicación usando el comando 'npm start'
+Iniciar la aplicación usando el comando 'npm start'
 
-* Para utilizar el proyecto, asegúrate de tener instaladas las siguientes librerías:
+Para utilizar el proyecto, asegúrate de tener instaladas las siguientes librerías:
 
 - bcrypt
 - connect-flash
@@ -28,26 +28,26 @@ Este es un proyecto de una API para conectarse con la plataforma de música Spot
 - express
 - express-session
 - jsonwebtoken
--mongoose
-* Puedes instalar estas librerías fácilmente utilizando el gestor de paquetes de Node.js, npm. Sigue los ]* siguientes pasos:
+- mongoose
+Puedes instalar estas librerías fácilmente utilizando el gestor de paquetes de Node.js, npm. Sigue los ]siguientes pasos:
 
-* Abre una terminal o línea de comandos en tu sistema operativo.
-* Navega a la carpeta donde está ubicado el proyecto.
-* Ejecuta el siguiente comando:
+bre una terminal o línea de comandos en tu sistema operativo.
+Navega a la carpeta donde está ubicado el proyecto.
+Ejecuta el siguiente comando:
 
 ```shell
 npm install
 ```
-* Este comando instalará todas las dependencias listadas en el archivo package.json, incluyendo las librerías mencionadas anteriormente.
+Este comando instalará todas las dependencias listadas en el archivo package.json, incluyendo las librerías mencionadas anteriormente.
 
-* Si deseas instalar una librería en particular, puedes ejecutar el siguiente comando:
+Si deseas instalar una librería en particular, puedes ejecutar el siguiente comando:
 
 ```shell
 npm install <nombre-de-la-librería>
 Reemplaza <nombre-de-la-librería> con el nombre de la librería que deseas instalar.
 ```
 
-* Una vez que hayas instalado las librerías, ya estás listo para utilizar el proyecto. ¡Disfrútalo!
+Una vez que hayas instalado las librerías, ya estás listo para utilizar el proyecto. ¡Disfrútalo!
 
 
 # Estructura de carpetas
@@ -73,7 +73,7 @@ Reemplaza <nombre-de-la-librería> con el nombre de la librería que deseas inst
 * `package-lock.json: Archivo generado automáticamente por npm para asegurar la consistencia de las dependencias instaladas.
 * `package.json: Archivo que contiene información sobre el proyecto y las dependencias utilizadas.
 # Uso
-* La API proporciona los siguientes endpoints:
+La API proporciona los siguientes endpoints:
 
 * GET /: Muestra la página de inicio de la aplicación
 * GET /auth/login: Redirige a la página de inicio de sesión de Spotify
@@ -84,7 +84,7 @@ Reemplaza <nombre-de-la-librería> con el nombre de la librería que deseas inst
 * Para utilizar la API, es necesario realizar una autenticación en Spotify a través del endpoint /auth/login.   Una vez autenticado, se puede realizar una búsqueda en la plataforma de música Spotify a través del endpoint /search. También se pueden crear y obtener listas de reproducción a través de los endpoints /playlist/:id y /playlist.
 
 # Contribución
-* Si desea contribuir a este proyecto, puede enviar una solicitud de extracción o abrir un problema.
+Si desea contribuir a este proyecto, puede enviar una solicitud de extracción o abrir un problema.
 
 # Autores
 - Gómez Flores Luis Enrique
@@ -94,4 +94,4 @@ Reemplaza <nombre-de-la-librería> con el nombre de la librería que deseas inst
 - Estrada Rosas Luis Fernando
 - Pech Garcia Nahun Issac 
 # Licencia
-* Este proyecto está bajo la Licencia MIT
+Este proyecto está bajo la Licencia MIT
