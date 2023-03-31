@@ -17,6 +17,39 @@ Este es un proyecto de una API para conectarse con la plataforma de música Spot
   SPOTIFY_REDIRECT_URI=http://localhost:3000/auth/callback
 * Iniciar la aplicación usando el comando 'npm start'
 
+* Para utilizar el proyecto, asegúrate de tener instaladas las siguientes librerías:
+
+- bcrypt
+- connect-flash
+- connect-mongodb-session
+- cookie-parser
+- dotenv
+- ejs
+- express
+- express-session
+- jsonwebtoken
+-mongoose
+* Puedes instalar estas librerías fácilmente utilizando el gestor de paquetes de Node.js, npm. Sigue los ]* siguientes pasos:
+
+* Abre una terminal o línea de comandos en tu sistema operativo.
+* Navega a la carpeta donde está ubicado el proyecto.
+* Ejecuta el siguiente comando:
+
+```shell
+npm install
+```
+* Este comando instalará todas las dependencias listadas en el archivo package.json, incluyendo las librerías mencionadas anteriormente.
+
+* Si deseas instalar una librería en particular, puedes ejecutar el siguiente comando:
+
+```shell
+npm install <nombre-de-la-librería>
+Reemplaza <nombre-de-la-librería> con el nombre de la librería que deseas instalar.
+```
+
+* Una vez que hayas instalado las librerías, ya estás listo para utilizar el proyecto. ¡Disfrútalo!
+
+
 # Estructura de carpetas
 
 * `node_modules/: Carpeta que contiene las dependencias del proyecto.
